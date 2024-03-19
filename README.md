@@ -1,5 +1,5 @@
-[![GoDoc](https://godoc.org/github.com/ailidani/paxi?status.svg)](https://godoc.org/github.com/ailidani/paxi)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ailidani/paxi)](https://goreportcard.com/report/github.com/ailidani/paxi)
+[![GoDoc](https://godoc.org/github.com/steamgjk/paxi?status.svg)](https://godoc.org/github.com/steamgjk/paxi)
+[![Go Report Card](https://goreportcard.com/badge/github.com/steamgjk/paxi)](https://goreportcard.com/report/github.com/steamgjk/paxi)
 [![Build Status](https://travis-ci.org/ailidani/paxi.svg?branch=master)](https://travis-ci.org/ailidani/paxi)
 
 
@@ -67,12 +67,12 @@ Features:
 1. Install [Go](https://golang.org/dl/).
 2. Use `go get` command or [Download](https://github.com/wpaxos/paxi/archive/master.zip) Paxi source code from GitHub page.
 ```
-go get github.com/ailidani/paxi
+go get github.com/steamgjk/paxi
 ```
 
 3. Compile everything from `paxi/bin` folder.
 ```
-cd github.com/ailidani/paxi/bin
+cd github.com/steamgjk/paxi/bin
 ./build.sh
 ```
 
@@ -86,7 +86,7 @@ After compile, Golang will generate 3 executable files under `bin` folder.
 
 Each executable file expects some parameters which can be seen by `-help` flag, e.g. `./server -help`.
 
-1. Create the [configuration file](https://github.com/ailidani/paxi/blob/master/bin/config.json) according to the example, then start server with `-config FILE_PATH` option, default to "config.json" when omit.
+1. Create the [configuration file](https://github.com/steamgjk/paxi/blob/master/bin/config.json) according to the example, then start server with `-config FILE_PATH` option, default to "config.json" when omit.
 
 2. Start 9 servers with different ids in format of "ZONE_ID.NODE_ID".
 ```
@@ -101,20 +101,20 @@ Each executable file expects some parameters which can be seen by `-help` flag, 
 ./server -id 3.3 -algorithm=paxos &
 ```
 
-3. Start benchmarking client that connects to server ID 1.1 and benchmark parameters specified in [config.json](https://github.com/ailidani/paxi/blob/master/bin/config.json).
+3. Start benchmarking client that connects to server ID 1.1 and benchmark parameters specified in [config.json](https://github.com/steamgjk/paxi/blob/master/bin/config.json).
 ```
 ./client -id 1.1 -config config.json
 ```
 When flag `id` is absent, client will randomly select any server for each operation.
 
-The algorithms can also be running in **simulation** mode, where all nodes are running in one process and transport layer is replaced by Go channels. Check [`simulation.sh`](https://github.com/ailidani/paxi/blob/master/bin/simulation.sh) script on how to run.
+The algorithms can also be running in **simulation** mode, where all nodes are running in one process and transport layer is replaced by Go channels. Check [`simulation.sh`](https://github.com/steamgjk/paxi/blob/master/bin/simulation.sh) script on how to run.
 
 
 # How to implement algorithms in Paxi
 
-Replication algorithm in Paxi follows the message passing model, where several message types and their handle function are registered. We use [Paxos](https://github.com/ailidani/paxi/tree/master/paxos) as an example for our step-by-step tutorial.
+Replication algorithm in Paxi follows the message passing model, where several message types and their handle function are registered. We use [Paxos](https://github.com/steamgjk/paxi/tree/master/paxos) as an example for our step-by-step tutorial.
 
-1. Define messages, register with gob in `init()` function if using gob codec. As show in [`msg.go`](https://github.com/ailidani/paxi/blob/master/paxos/msg.go).
+1. Define messages, register with gob in `init()` function if using gob codec. As show in [`msg.go`](https://github.com/steamgjk/paxi/blob/master/paxos/msg.go).
 
 2. Define a `Replica` structure embeded with `paxi.Node` interface.
 ```go

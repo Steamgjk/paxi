@@ -4,22 +4,22 @@ import (
 	"flag"
 	"sync"
 
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/abd"
-	"github.com/ailidani/paxi/blockchain"
-	"github.com/ailidani/paxi/chain"
-	"github.com/ailidani/paxi/dynamo"
-	"github.com/ailidani/paxi/epaxos"
-	"github.com/ailidani/paxi/hpaxos"
-	"github.com/ailidani/paxi/kpaxos"
-	"github.com/ailidani/paxi/log"
-	"github.com/ailidani/paxi/m2paxos"
-	"github.com/ailidani/paxi/paxos"
-	"github.com/ailidani/paxi/paxos_group"
-	"github.com/ailidani/paxi/sdpaxos"
-	"github.com/ailidani/paxi/vpaxos"
-	"github.com/ailidani/paxi/wankeeper"
-	"github.com/ailidani/paxi/wpaxos"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/abd"
+	"github.com/steamgjk/paxi/blockchain"
+	"github.com/steamgjk/paxi/chain"
+	"github.com/steamgjk/paxi/dynamo"
+	"github.com/steamgjk/paxi/epaxos"
+	"github.com/steamgjk/paxi/hpaxos"
+	"github.com/steamgjk/paxi/kpaxos"
+	"github.com/steamgjk/paxi/log"
+	"github.com/steamgjk/paxi/m2paxos"
+	"github.com/steamgjk/paxi/paxos"
+	"github.com/steamgjk/paxi/paxos_group"
+	"github.com/steamgjk/paxi/sdpaxos"
+	"github.com/steamgjk/paxi/vpaxos"
+	"github.com/steamgjk/paxi/wankeeper"
+	"github.com/steamgjk/paxi/wpaxos"
 )
 
 var algorithm = flag.String("algorithm", "paxos", "Distributed algorithm")
@@ -85,8 +85,9 @@ func replica(id paxi.ID) {
 }
 
 func main() {
+	log.Infof("Paxi Start Init")
 	paxi.Init()
-
+	log.Infof("Paxi Init Complete")
 	if *simulation {
 		var wg sync.WaitGroup
 		wg.Add(1)

@@ -3,9 +3,9 @@ package paxos_group
 import (
 	"flag"
 
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/log"
-	"github.com/ailidani/paxi/paxos"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/log"
+	"github.com/steamgjk/paxi/paxos"
 )
 
 var groups = flag.Int("groups", 5, "Number of Paxos groups")

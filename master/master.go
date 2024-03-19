@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ailidani/paxi"
+	"github.com/steamgjk/paxi"
 )
 
 var port = flag.Int("port", 1735, "master port number")

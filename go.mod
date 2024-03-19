@@ -1,3 +1,3 @@
-module github.com/ailidani/paxi
+module github.com/steamgjk/paxi
 
-go 1.13
+go 1.22.1

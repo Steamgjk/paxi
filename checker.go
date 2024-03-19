@@ -3,7 +3,7 @@ package paxi
 import (
 	"sort"
 
-	"github.com/ailidani/paxi/lib"
+	"github.com/steamgjk/paxi/lib"
 )
 
 // A simple linearizability checker based on https://pdos.csail.mit.edu/6.824/papers/fb-consistency.pdf

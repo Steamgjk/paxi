@@ -3,8 +3,8 @@ package wpaxos
 import (
 	"flag"
 
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/log"
 )
 
 var adaptive = flag.Bool("adaptive", true, "stable leader, if true paxos forward request to current leader")

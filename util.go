@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi/log"
 )
 
 // Max of two int

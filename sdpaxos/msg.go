@@ -4,7 +4,7 @@ import (
 	"encoding/gob"
 	"fmt"
 
-	"github.com/ailidani/paxi"
+	"github.com/steamgjk/paxi"
 )
 
 func init() {

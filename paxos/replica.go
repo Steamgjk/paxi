@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/log"
 )
 
 var ephemeralLeader = flag.Bool("ephemeral_leader", false, "unstable leader, if true paxos replica try to become leader instead of forward requests to current leader")

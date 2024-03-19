@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/ailidani/paxi/lib"
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi/lib"
+	"github.com/steamgjk/paxi/log"
 )
 
 // Client interface provides get and put for key value store

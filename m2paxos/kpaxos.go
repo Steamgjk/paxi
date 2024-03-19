@@ -1,8 +1,8 @@
 package m2paxos
 
 import (
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/paxos"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/paxos"
 )
 
 type kpaxos struct {

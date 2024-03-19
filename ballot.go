@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi/log"
 )
 
 // Ballot is ballot number type combines 32 bits of natual number and 32 bits of node id into uint64

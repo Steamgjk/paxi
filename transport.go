@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi/log"
 )
 
 var scheme = flag.String("transport", "tcp", "transport scheme (tcp, udp, chan), default tcp")
@@ -118,9 +118,11 @@ func (t *transport) Dial() error {
 	return nil
 }
 
-/******************************
+/*
+*****************************
 /*     TCP communication      *
-/******************************/
+/*****************************
+*/
 type tcp struct {
 	*transport
 }
@@ -166,9 +168,11 @@ func (t *tcp) Listen() {
 	}(listener)
 }
 
-/******************************
+/*
+*****************************
 /*     UDP communication      *
-/******************************/
+/*****************************
+*/
 type udp struct {
 	*transport
 }

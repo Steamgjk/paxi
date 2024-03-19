@@ -3,8 +3,8 @@ package wankeeper
 import (
 	"flag"
 
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/log"
 )
 
 // master node id

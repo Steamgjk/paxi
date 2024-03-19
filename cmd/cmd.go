@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ailidani/paxi/chain"
+	"github.com/steamgjk/paxi/chain"
 
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/paxos"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/paxos"
 )
 
 var id = flag.String("id", "", "node id this client connects to")

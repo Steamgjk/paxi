@@ -1,6 +1,6 @@
 package epaxos
 
-import "github.com/ailidani/paxi"
+import "github.com/steamgjk/paxi"
 
 type status int8
 

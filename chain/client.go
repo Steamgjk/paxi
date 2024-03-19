@@ -3,7 +3,7 @@ package chain
 import (
 	"sort"
 
-	"github.com/ailidani/paxi"
+	"github.com/steamgjk/paxi"
 )
 
 type Client struct {

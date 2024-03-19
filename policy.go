@@ -4,7 +4,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi/log"
 )
 
 // Policy defines a trigger for data access patterns, that can be used in data migration protocols

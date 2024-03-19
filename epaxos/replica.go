@@ -3,10 +3,10 @@ package epaxos
 import (
 	"flag"
 
-	"github.com/ailidani/paxi/lib"
+	"github.com/steamgjk/paxi/lib"
 
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/log"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/log"
 )
 
 var replyWhenCommit = flag.Bool("ReplyWhenCommit", false, "Reply to client when request is committed, instead of executed")

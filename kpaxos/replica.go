@@ -1,9 +1,9 @@
 package kpaxos
 
 import (
-	"github.com/ailidani/paxi"
-	"github.com/ailidani/paxi/log"
-	"github.com/ailidani/paxi/paxos"
+	"github.com/steamgjk/paxi"
+	"github.com/steamgjk/paxi/log"
+	"github.com/steamgjk/paxi/paxos"
 )
 
 // Replica KPaxos replica with Paxos instance for each key
